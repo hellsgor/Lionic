@@ -1,3 +1,5 @@
+@import './fonts.css';
+
 html {
   box-sizing: border-box;
 }
@@ -19,7 +21,10 @@ img {
 
 body {
   min-width: 1200px;
-  font-family: 'font', sans-serif;
+  font-family: 'OpenSans', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #787878;
 }
 
 /* glob */
