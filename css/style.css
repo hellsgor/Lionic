@@ -382,7 +382,8 @@ body {
 }
 
 .footer__container {
-  padding: 44px 0 44px;
+  padding-top: 44px;
+  padding-bottom: 44px;
   align-items: center;
   justify-content: space-between;
 }
