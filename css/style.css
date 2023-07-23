@@ -226,24 +226,35 @@ body {
 
 .articles__item {
   width: 570px;
-  outline: 1px solid coral;
 }
 
 .articles__item:not(:nth-child(2n)) {
   margin-right: 30px;
 }
 
+.articles__item:not(:nth-last-child(-n-2)) {
+  margin-top: 30px;
+}
+
+.blog-preview {
+  overflow: hidden;
+}
+
 .blog-preview__image {
+  width: 170px;
+  height: 180px;
   object-fit: cover;
 }
 
 .blog-preview__text {
-  padding: 30px;
+  padding: 23px 30px;
 }
 
 .blog-preview__time {
   display: block;
   margin-bottom: 5px;
+  font-size: 10px;
+  line-height: 150%;
 }
 
 .blog-preview__title {
@@ -251,7 +262,9 @@ body {
 }
 
 .blog-preview__description {
+  max-width: 210px;
   margin: 0;
+  line-height: 150%;
 }
 
 /* clients */
