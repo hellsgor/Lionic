@@ -281,14 +281,6 @@ body {
   flex-wrap: wrap;
   --offsets: 3;
   gap: var(--gap);
-
-  @media (max-width: 1024px) {
-    --offsets: 1;
-  }
-
-  @media (max-width: 425px) {
-    --offsets: 0;
-  }
 }
 
 .services__item {
