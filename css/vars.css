@@ -1,0 +1,7 @@
+:root {
+  --radius: 5px;
+  --hover-color: #3172b9;
+  --focus-color: #71a7e2;
+  --active-color: #0e3b6c;
+  --disabled-color: #c4c4c4;
+}
