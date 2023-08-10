@@ -11,12 +11,12 @@
 
 <body>
 <header class="header">
-  <div class="container header-container">
+  <div class="container flex header-container">
     <a class="header__logo" href="#">
       <img alt="Logo" class="header__logo" src="./img/logo.svg">
     </a>
     <nav class="header__nav">
-      <ul class="header__nav-list list-reset">
+      <ul class="list-reset header__nav-list list-reset flex">
         <li class="header__list-item">
           <a class="header__list-item-link" href="#">Home</a></li>
         <li class="header__list-item">
@@ -37,7 +37,7 @@
 <main class="main">
   <section class="hero" id="hero">
     <div class="container">
-      <div class="hero__content">
+      <div class="hero__content flex">
         <h1 class="hero__title">
           This is&nbsp;simply a&nbsp;smarter way to&nbsp;make your legal online
         </h1>
@@ -46,7 +46,7 @@
           nonummy nibh euismod tincidunt ut laoreet
           dolore.
         </p>
-        <div class="hero__wrapper">
+        <div class="hero__wrapper flex">
           <button class="button button-reset hero__button">
             FREE 30&nbsp;DAY TRIAL
           </button>
@@ -63,8 +63,8 @@
         end-of-life plans.
       </p>
       <ul class="list-reset services__items">
-        <li class="services__item bordered">
-          <div class="services__item-icon">
+        <li class="service-card bordered">
+          <div class="service-card__icon">
             <svg fill="none" height="66" viewBox="0 0 68 66" width="68" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_7_34)">
                 <path
@@ -85,8 +85,8 @@
             nonummy
           </p>
         </li>
-        <li class="services__item bordered">
-          <div class="services__item-icon">
+        <li class="service-card bordered">
+          <div class="service-card__icon">
             <svg fill="none" height="64" viewBox="0 0 86 64" width="86" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_7_47)">
                 <path
@@ -107,8 +107,8 @@
             nonummy
           </p>
         </li>
-        <li class="services__item bordered">
-          <div class="services__item-icon">
+        <li class="service-card bordered">
+          <div class="service-card__icon">
             <svg fill="none" height="64" viewBox="0 0 64 64" width="64" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_7_58)">
                 <path
@@ -129,8 +129,8 @@
             nonummy
           </p>
         </li>
-        <li class="services__item bordered">
-          <div class="services__item-icon">
+        <li class="service-card bordered">
+          <div class="service-card__icon">
             <svg fill="none" height="65" viewBox="0 0 65 65" width="65" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_7_69)">
                 <path
@@ -158,7 +158,7 @@
   <section class="articles section" id="articles">
     <div class="container">
       <h2 class="section__title articles__title">Articles</h2>
-      <ul class="list-reset articles__list">
+      <ul class="list-reset articles__list flex">
         <li class="articles__item">
           <article class="blog-preview">
             <a class="blog-preview__link" href="#">
@@ -233,8 +233,8 @@
   <section class="clients section" id="clients">
     <div class="container">
       <h2 class="section__title clients__title">Clients</h2>
-      <ul class="list-reset clients__list">
-        <li class="clients__item bordered">
+      <ul class="list-reset clients__list flex">
+        <li class="clients__item flex bordered">
           <p class="clients__item-description">
             Duis autem vel eum iriure dolor in&nbsp;hendrerit in&nbsp;vulputate
             velit esse molestie consequat, vel illum
@@ -242,7 +242,7 @@
             et&nbsp;iusto odio dignissim qui
             blandit odio dignissim qui blandit molestie consequat.
           </p>
-          <div class="clients__user">
+          <div class="clients__user flex">
             <div class="clients__user-avatar">
               <img alt="John Armstrong" src="./img/client-avatar-1.jpg">
             </div>
@@ -252,7 +252,7 @@
             </div>
           </div>
         </li>
-        <li class="clients__item bordered">
+        <li class="clients__item flex bordered">
           <p class="clients__item-description">
             Duis autem vel eum iriure dolor in&nbsp;hendrerit in&nbsp;vulputate
             velit esse molestie consequat, vel illum
@@ -260,7 +260,7 @@
             et&nbsp;iusto odio dignissim qui
             blandit odio dignissim qui blandit molestie consequat.
           </p>
-          <div class="clients__user">
+          <div class="clients__user flex">
             <div class="clients__user-avatar">
               <img alt="Elizabeth Martin" src="./img/client-avatar-2.jpg">
             </div>
@@ -270,7 +270,7 @@
             </div>
           </div>
         </li>
-        <li class="clients__item bordered">
+        <li class="clients__item flex bordered">
           <p class="clients__item-description">
             Duis autem vel eum iriure dolor in&nbsp;hendrerit in&nbsp;vulputate
             velit esse molestie consequat, vel illum
@@ -278,7 +278,7 @@
             et&nbsp;iusto odio dignissim qui
             blandit odio dignissim qui blandit molestie consequat.
           </p>
-          <div class="clients__user">
+          <div class="clients__user flex">
             <div class="clients__user-avatar">
               <img alt="Robin Soutby" src="./img/client-avatar-3.jpg">
             </div>
@@ -295,8 +295,8 @@
     <div class="container">
       <h2 class="section__title contacts__title">Contacts</h2>
       <address class="contacts__address">
-        <ul class="list-reset contacts__list">
-          <li class="contacts__item contacts__item_location">
+        <ul class="list-reset contacts__list flex">
+          <li class="contacts__item contacts__item_location flex">
             <strong class="contacts__item-caption">
               Visit&nbsp;Us
             </strong>
@@ -305,7 +305,7 @@
               velit.
             </p>
           </li>
-          <li class="contacts__item contacts__item_call">
+          <li class="contacts__item contacts__item_call flex">
             <strong class="contacts__item-caption">
               Call&nbsp;Us
             </strong>
@@ -314,7 +314,7 @@
             <a class="contacts__item-link" href="tel:+71234567890">+7 (123)
               456-78-90</a>
           </li>
-          <li class="contacts__item contacts__item_mail">
+          <li class="contacts__item contacts__item_mail flex">
             <strong class="contacts__item-caption">
               Email&nbsp;Us
             </strong>
@@ -366,17 +366,17 @@
   </section>
 </main>
 <footer class="footer">
-  <div class="container footer__container">
-    <div class="footer__left">
+  <div class="container flex footer__container">
+    <div class="footer__left flex">
       <a class="footer__logo" href="#">
         <img alt="Footer logo" src="./img/logo.svg">
       </a>
       <small class="footer__copyright">Copyright &copy;2017. All Right
         Reserved</small>
     </div>
-    <div class="footer__right">
+    <div class="footer__right flex">
       <nav class="footer__nav">
-        <ul class="list-reset footer__nav-list">
+        <ul class="list-reset footer__nav-list flex">
           <li class="footer__nav-list-item">
             <a class="footer__nav-list-item-link" href="#" target="_blank">About
               Us</a>
@@ -395,7 +395,7 @@
           </li>
         </ul>
       </nav>
-      <ul class="list-reset footer__social">
+      <ul class="list-reset footer__social flex">
         <li class="footer__social-item">
           <a class="footer__social-item-link footer__social-item-link_twitter" href="https://twitter.com"
             target="_blank">
