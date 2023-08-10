@@ -1,0 +1,54 @@
+.button-reset {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.button {
+  position: relative;
+  padding: 15px 35px;
+  outline: none;
+  border-radius: 3px;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  background-color: var(--hover-color);
+  color: #fff;
+  transition: background-color .3s ease-in-out;
+}
+
+.button::after {
+  position: absolute;
+  top: -3px;
+  right: -3px;
+  bottom: -3px;
+  left: -3px;
+  opacity: 0;
+  outline: none;
+  border: 1px solid var(--hover-color);
+  border-radius: inherit;
+  content: '';
+  transition: opacity .3s ease-in-out;
+}
+
+.button:focus::after {
+  opacity: 1;
+}
+
+.button:hover {
+  background-color: var(--focus-color);
+}
+
+.button:active {
+  background-color: var(--active-color);
+}
+
+.button:active::after {
+  opacity: 0;
+}
+
+.button:disabled {
+  background-color: var(--disabled-color);
+  cursor: not-allowed;
+}

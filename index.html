@@ -63,8 +63,8 @@
         end-of-life plans.
       </p>
       <ul class="list-reset services__items flex">
-        <li class="services__item flex bordered">
-          <div class="services__item-icon">
+        <li class="service-card flex bordered">
+          <div class="service-card__icon">
             <svg fill="none" height="66" viewBox="0 0 68 66" width="68" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_7_34)">
                 <path
@@ -79,14 +79,14 @@
             </svg>
 
           </div>
-          <h3 class="services__item-title heading-3">Your Legacy</h3>
-          <p class="services__item-description">
+          <h3 class="service-card__title heading-3">Your Legacy</h3>
+          <p class="service-card__description">
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
             nonummy
           </p>
         </li>
-        <li class="services__item flex bordered">
-          <div class="services__item-icon">
+        <li class="service-card flex bordered">
+          <div class="service-card__icon">
             <svg fill="none" height="64" viewBox="0 0 86 64" width="86" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_7_47)">
                 <path
@@ -101,14 +101,14 @@
             </svg>
 
           </div>
-          <h3 class="services__item-title heading-3">Your Health</h3>
-          <p class="services__item-description">
+          <h3 class="service-card__title heading-3">Your Health</h3>
+          <p class="service-card__description">
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
             nonummy
           </p>
         </li>
-        <li class="services__item flex bordered">
-          <div class="services__item-icon">
+        <li class="service-card flex bordered">
+          <div class="service-card__icon">
             <svg fill="none" height="64" viewBox="0 0 64 64" width="64" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_7_58)">
                 <path
@@ -123,14 +123,14 @@
             </svg>
 
           </div>
-          <h3 class="services__item-title heading-3">Funeral &amp;&nbsp;Memorial</h3>
-          <p class="services__item-description">
+          <h3 class="service-card__title heading-3">Funeral &amp;&nbsp;Memorial</h3>
+          <p class="service-card__description">
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
             nonummy
           </p>
         </li>
-        <li class="services__item flex bordered">
-          <div class="services__item-icon">
+        <li class="service-card flex bordered">
+          <div class="service-card__icon">
             <svg fill="none" height="65" viewBox="0 0 65 65" width="65" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_7_69)">
                 <path
@@ -145,8 +145,8 @@
             </svg>
 
           </div>
-          <h3 class="services__item-title heading-3">Legal &amp;&nbsp;Financial</h3>
-          <p class="services__item-description">
+          <h3 class="service-card__title heading-3">Legal &amp;&nbsp;Financial</h3>
+          <p class="service-card__description">
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
             nonummy
           </p>
@@ -331,13 +331,13 @@
       <p class="section__description join-us__description">
         Take control of your paid subscriptions today!
       </p>
-      <form action="https://jsonplaceholder.typicode.com/posts" class="form" method="POST">
-        <div class="form__top-row">
-          <div class="form__left-column">
-            <input class="form__item form__input" name="name" placeholder="Name" required type="text">
-            <input class="form__item form__input" name="email" placeholder="Email" required type="email">
-            <input class="form__item form__input" name="phone" placeholder="Phone" required type="tel">
-            <select class="form__item form__select" id="country" name="county">
+      <form action="https://jsonplaceholder.typicode.com/posts" class="join-as-form" method="POST">
+        <div class="join-as-form__top-row">
+          <div class="join-as-form__left-column">
+            <input class="join-as-form__item join-as-form__input" name="name" placeholder="Name" required type="text">
+            <input class="join-as-form__item join-as-form__input" name="email" placeholder="Email" required type="email">
+            <input class="join-as-form__item join-as-form__input" name="phone" placeholder="Phone" required type="tel">
+            <select class="join-as-form__item join-as-form__select" id="country" name="county">
               <option disabled selected value="Country">Country</option>
               <option value="United Kingdom">United Kingdom</option>
               <option value="United States">United States</option>
@@ -347,14 +347,14 @@
               <option value="Estonia">Estonia</option>
             </select>
           </div>
-          <div class="form__right-column">
-            <textarea class="form__item form__textarea" name="comment" placeholder="Comment"></textarea>
+          <div class="join-as-form__right-column">
+            <textarea class="join-as-form__item join-as-form__textarea" name="comment" placeholder="Comment"></textarea>
           </div>
         </div>
-        <div class="form__bottom-row">
-          <div class="form__bottom-row-wrapper">
-            <button class="button button-reset form__submit-button" type="submit">get started</button>
-            <label class="form__checkbox">
+        <div class="join-as-form__bottom-row">
+          <div class="join-as-form__bottom-row-wrapper">
+            <button class="button button-reset join-as-form__submit-button" type="submit">get started</button>
+            <label class="join-as-form__checkbox">
               <input required type="checkbox">
               I agree with the
               <a href="#">user agreement</a>

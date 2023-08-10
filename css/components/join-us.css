@@ -1,0 +1,14 @@
+@import url(./join-us-form.css);
+
+.join-us {
+  padding-bottom: 122px;
+}
+
+.join-us__title {
+  margin-bottom: 22px;
+  text-align: center;
+}
+
+.join-us__description {
+  margin-bottom: 30px;
+}

@@ -1,0 +1,82 @@
+.blog-preview {
+  overflow: hidden;
+  border-radius: var(--radius);
+}
+
+.blog-preview__link {
+  position: relative;
+  display: flex;
+  width: 100%;
+}
+
+.blog-preview__image {
+  width: 170px;
+  height: 180px;
+  object-fit: cover;
+}
+
+.blog-preview__text {
+  width: 100%;
+  padding: 23px 30px;
+  border-width: 1px;
+  border-left-width: 0;
+  border-style: solid;
+  border-top-right-radius: var(--radius);
+  border-bottom-right-radius: var(--radius);
+  border-color: #e4e4e4;
+  background-color: #fff;
+  transition: background-color .3s ease-in-out, border-color .3s ease-in-out;
+}
+
+.blog-preview__time {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 10px;
+  line-height: 150%;
+  transition: color .3s ease-in-out;
+}
+
+.blog-preview__title {
+  margin: 0 0 15px 0;
+  transition: color .3s ease-in-out;
+}
+
+.blog-preview__description {
+  max-width: 210px;
+  margin: 0;
+  line-height: 150%;
+  transition: color .3s ease-in-out;
+}
+
+.blog-preview__link:hover .blog-preview__text {
+  border-color: var(--hover-color);
+  background-color: var(--hover-color);
+}
+
+.blog-preview__link:hover .blog-preview__title,
+.blog-preview__link:hover .blog-preview__time,
+.blog-preview__link:hover .blog-preview__description {
+  color: #fff;
+}
+
+.blog-preview__link:focus .blog-preview__text {
+  border-color: var(--focus-color);
+  background-color: var(--focus-color);
+}
+
+.blog-preview__link:focus .blog-preview__title,
+.blog-preview__link:focus .blog-preview__time,
+.blog-preview__link:focus .blog-preview__description {
+  color: #fff;
+}
+
+.blog-preview__link:active .blog-preview__text {
+  border-color: var(--active-color);
+  background-color: var(--active-color);
+}
+
+.blog-preview__link:active .blog-preview__title,
+.blog-preview__link:active .blog-preview__time,
+.blog-preview__link:active .blog-preview__description {
+  color: #fff;
+}
