@@ -6,7 +6,12 @@
   font-style: normal;
 }
 
+.contacts__list {
+  display: flex;
+}
+
 .contacts__item {
+  display: flex;
   width: 370px;
   padding-top: 48px;
   flex-direction: column;

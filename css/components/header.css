@@ -5,6 +5,7 @@
 }
 
 .header-container {
+  display: flex;
   align-items: center;
 }
 
@@ -14,6 +15,10 @@
 
 .header__nav {
   margin-right: 52px;
+}
+
+.header__nav-list {
+  display: flex;
 }
 
 .header__list-item:not(:last-child) {

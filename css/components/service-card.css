@@ -1,4 +1,5 @@
 .service-card {
+  display: flex;
   width: 270px;
   padding: 60px 30px;
   flex-direction: column;

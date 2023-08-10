@@ -1,4 +1,9 @@
+.clients__list {
+  display: flex;
+}
+
 .clients__item {
+  display: flex;
   width: 370px;
   padding: 51px 36px 32px;
   flex-direction: column;
@@ -15,6 +20,7 @@
 }
 
 .clients__user {
+  display: flex;
   padding-top: 28px;
   border-top: 1px solid #e4e4e4;
   margin-top: auto;

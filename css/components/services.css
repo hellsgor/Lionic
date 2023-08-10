@@ -3,3 +3,7 @@
 .services__title {
   text-align: center;
 }
+
+.services__items {
+  display: flex;
+}

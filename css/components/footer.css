@@ -3,6 +3,7 @@
 }
 
 div.footer__container {
+  display: flex;
   padding-top: 44px;
   padding-bottom: 44px;
   align-items: center;
@@ -15,6 +16,7 @@ div.footer__container {
 
 .footer__left,
 .footer__right {
+  display: flex;
   align-items: center;
 }
 
@@ -26,6 +28,9 @@ div.footer__container {
   margin-right: 56px;
 }
 
+.footer__nav-list {
+  display: flex;
+}
 
 .footer__nav-list-item:not(:last-child) {
   margin-right: 28px;
@@ -49,6 +54,10 @@ div.footer__container {
 .footer__nav-list-item-link:active {
   outline: none;
   color: var(--active-color);
+}
+
+.footer__social {
+  display: flex;
 }
 
 .footer__social-item:not(:last-child) {

@@ -1,6 +1,7 @@
 @import url(./blog-preview.css);
 
 .articles__list {
+  display: flex;
   margin-bottom: 30px;
   flex-wrap: wrap;
 }
