@@ -9,7 +9,7 @@
 .join-as-form__top-row {
   display: flex;
   justify-content: space-between;
-  column-gap: 19px;
+  gap: 19px;
 }
 
 .join-as-form__left-column {
@@ -83,19 +83,59 @@
   border-radius: 50px;
 }
 
-.join-as-form__checkbox {
-  display: flex;
-  align-items: center;
-  font-size: 12px;
-  line-height: 16px;
+@media (max-width: 1200px) {
+  .join-as-form__item {
+    width: 100%;
+  }
 }
 
-.join-as-form__checkbox input {
-  margin-right: 8px;
+@media (max-width: 768px) {
+  .join-as-form {
+    padding: 0;
+  }
 }
 
-.join-as-form__checkbox a {
-  padding-left: 3px;
-  text-decoration: underline;
-  color: #3172b9;
+@media (max-width: 576px) {
+  .join-as-form {
+    gap: 13px;
+  }
+
+  .join-as-form__top-row {
+    flex-direction: column;
+  }
+
+  .join-as-form__left-column,
+  .join-as-form__right-column {
+    width: 100%;
+  }
+
+  .join-as-form__bottom-row {
+    justify-content: center;
+  }
+
+  .join-as-form__item {
+    padding: 15px 20px;
+  }
+
+  .join-as-form__left-column {
+    gap: 15px;
+  }
+
+  .join-as-form__top-row {
+    gap: 15px;
+  }
+
+  .join-as-form__textarea {
+    height: 240px;
+  }
+
+  .join-as-form__bottom-row-wrapper {
+    width: 100%;
+    gap: 16px;
+  }
+
+  .join-as-form__submit-button {
+    width: 100%;
+    min-height: 60px;
+  }
 }

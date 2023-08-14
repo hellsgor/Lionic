@@ -6,4 +6,31 @@
 
 .services__items {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: var(--offset);
+  --offsets: 3;
+  --offset: 30px;
+}
+
+.services__items > * {
+  width: calc((100% - (var(--offset) * var(--offsets))) / ((var(--offsets) + 1)));
+}
+
+@media (max-width: 992px) {
+  .services__items {
+    --offsets: 1;
+  }
+}
+
+@media (max-width: 576px) {
+  .services__title {
+    text-align: left;
+  }
+
+  .services__items {
+    --offsets: 1;
+    --offset: 16px;
+    row-gap: 20px;
+  }
 }

@@ -12,26 +12,25 @@
 <body>
 <header class="header">
   <div class="container header-container">
-    <a class="header__logo" href="#">
-      <img alt="Logo" class="header__logo" src="./img/logo.svg">
+    <a class="header__logo">
+      <img alt="Logo" class="header__logo" src="images/logo.svg">
     </a>
-    <nav class="header__nav">
-      <ul class="list-reset header__nav-list list-reset">
-        <li class="header__list-item">
-          <a class="header__list-item-link" href="#">Home</a></li>
-        <li class="header__list-item">
-          <a class="header__list-item-link" href="#services">Services</a></li>
-        <li class="header__list-item">
-          <a class="header__list-item-link" href="#articles">Articles</a></li>
-        <li class="header__list-item">
-          <a class="header__list-item-link" href="#clients">Clients</a></li>
-        <li class="header__list-item">
-          <a class="header__list-item-link" href="#contacts">Contacts</a></li>
-        <li class="header__list-item">
-          <a class="header__list-item-link" href="#join-us">Join us</a></li>
-      </ul>
-    </nav>
-    <button class="button button-reset header__button">Free trial</button>
+    <div class="header__right-column">
+      <nav class="header__nav">
+        <a class="header__nav-item" href="#">Home</a>
+        <a class="header__nav-item" href="#services">Services</a>
+        <a class="header__nav-item" href="#articles">Articles</a>
+        <a class="header__nav-item" href="#clients">Clients</a>
+        <a class="header__nav-item" href="#contacts">Contacts</a>
+        <a class="header__nav-item" href="#join-us">Join us</a>
+      </nav>
+      <button class="button button-reset header__button">Free trial</button>
+      <button class="btn-reset burger">
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+      </button>
+    </div>
   </div>
 </header>
 <main class="main">
@@ -58,10 +57,7 @@
   <section class="services section" id="services">
     <div class="container">
       <h2 class="section__title services__title">Services</h2>
-      <p class="section__description services__description">
-        Lionic guides you on&nbsp;making decisions for all aspects of&nbsp;your
-        end-of-life plans.
-      </p>
+      <p class="section__description services__description">Lionic guides you on&nbsp;making decisions for all aspects of&nbsp;your end-of-life plans.</p>
       <ul class="list-reset services__items">
         <li class="service-card bordered">
           <div class="service-card__icon">
@@ -123,7 +119,7 @@
             </svg>
 
           </div>
-          <h3 class="service-card__title heading-3">Funeral &amp;&nbsp;Memorial</h3>
+          <h3 class="service-card__title heading-3">Funeral&nbsp;& Memorial</h3>
           <p class="service-card__description">
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
             nonummy
@@ -145,7 +141,7 @@
             </svg>
 
           </div>
-          <h3 class="service-card__title heading-3">Legal &amp;&nbsp;Financial</h3>
+          <h3 class="service-card__title heading-3">Legal&nbsp;&amp; Financial</h3>
           <p class="service-card__description">
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
             nonummy
@@ -158,83 +154,75 @@
   <section class="articles section" id="articles">
     <div class="container">
       <h2 class="section__title articles__title">Articles</h2>
-      <ul class="list-reset articles__list">
-        <li class="articles__item">
-          <article class="blog-preview">
-            <a class="blog-preview__link" href="#">
-              <img alt="Blog photo 1" class="blog-preview__image" src="./img/blog-1.jpg">
-              <div class="blog-preview__text">
-                <time class="blog-preview__time" datetime="2023-07-16 12:36">
-                  15 Nov 2021
-                </time>
-                <h3 class="blog-preview__title heading-3">Jurisdiction</h3>
-                <p class="blog-preview__description">
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                  diam nonummy
-                </p>
-              </div>
-            </a>
-          </article>
-        </li>
-        <li class="articles__item">
-          <article class="blog-preview">
-            <a class="blog-preview__link" href="#">
-              <img alt="Blog photo 2" class="blog-preview__image" src="./img/blog-2.jpg">
-              <div class="blog-preview__text">
-                <time class="blog-preview__time" datetime="2023-07-16 12:36">
-                  28 Nov 2021
-                </time>
-                <h3 class="blog-preview__title heading-3">Consulting</h3>
-                <p class="blog-preview__description">
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                  diam nonummy
-                </p>
-              </div>
-            </a>
-          </article>
-        </li>
-        <li class="articles__item">
-          <article class="blog-preview">
-            <a class="blog-preview__link" href="#">
-              <img alt="Blog photo 3" class="blog-preview__image" src="./img/blog-3.jpg">
-              <div class="blog-preview__text">
-                <time class="blog-preview__time" datetime="2023-07-16 12:36">
-                  29 Nov 2021
-                </time>
-                <h3 class="blog-preview__title heading-3">Rights and obligations</h3>
-                <p class="blog-preview__description">
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                  diam nonummy
-                </p>
-              </div>
-            </a>
-          </article>
-        </li>
-        <li class="articles__item">
-          <article class="blog-preview">
-            <a class="blog-preview__link" href="#">
-              <img alt="Blog photo 4" class="blog-preview__image" src="./img/blog-4.jpg">
-              <div class="blog-preview__text">
-                <time class="blog-preview__time" datetime="2023-07-16 12:36">
-                  11 Dec 2021
-                </time>
-                <h3 class="blog-preview__title heading-3">Contractors</h3>
-                <p class="blog-preview__description">
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                  diam nonummy
-                </p>
-              </div>
-            </a>
-          </article>
-        </li>
-      </ul>
+      <div class="articles__list">
+        <article class="blog-preview">
+          <a class="blog-preview__link" href="#">
+            <img alt="Blog photo 1" class="blog-preview__image blog-preview__image_jurisdiction" src="images/blog-1.jpg">
+            <div class="blog-preview__text">
+              <time class="blog-preview__time" datetime="2023-07-16 12:36">
+                15 Nov 2021
+              </time>
+              <h3 class="blog-preview__title heading-3">Jurisdiction</h3>
+              <p class="blog-preview__description">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                diam nonummy
+              </p>
+            </div>
+          </a>
+        </article>
+        <article class="blog-preview">
+          <a class="blog-preview__link" href="#">
+            <img alt="Blog photo 2" class="blog-preview__image blog-preview__image_consulting" src="images/blog-2.jpg">
+            <div class="blog-preview__text">
+              <time class="blog-preview__time" datetime="2023-07-16 12:36">
+                28 Nov 2021
+              </time>
+              <h3 class="blog-preview__title heading-3">Consulting</h3>
+              <p class="blog-preview__description">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                diam nonummy
+              </p>
+            </div>
+          </a>
+        </article>
+        <article class="blog-preview">
+          <a class="blog-preview__link" href="#">
+            <img alt="Blog photo 3" class="blog-preview__image blog-preview__image_rights" src="images/blog-3.jpg">
+            <div class="blog-preview__text">
+              <time class="blog-preview__time" datetime="2023-07-16 12:36">
+                29 Nov 2021
+              </time>
+              <h3 class="blog-preview__title heading-3">Rights and obligations</h3>
+              <p class="blog-preview__description">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                diam nonummy
+              </p>
+            </div>
+          </a>
+        </article>
+        <article class="blog-preview">
+          <a class="blog-preview__link" href="#">
+            <img alt="Blog photo 4" class="blog-preview__image blog-preview__image_contractors" src="images/blog-4.jpg">
+            <div class="blog-preview__text">
+              <time class="blog-preview__time" datetime="2023-07-16 12:36">
+                11 Dec 2021
+              </time>
+              <h3 class="blog-preview__title heading-3">Contractors</h3>
+              <p class="blog-preview__description">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                diam nonummy
+              </p>
+            </div>
+          </a>
+        </article>
+      </div>
     </div>
   </section>
   <section class="clients section" id="clients">
     <div class="container">
       <h2 class="section__title clients__title">Clients</h2>
-      <ul class="list-reset clients__list">
-        <li class="clients__item bordered">
+      <div class="clients__list">
+        <div class="clients__item bordered">
           <p class="clients__item-description">
             Duis autem vel eum iriure dolor in&nbsp;hendrerit in&nbsp;vulputate
             velit esse molestie consequat, vel illum
@@ -244,15 +232,15 @@
           </p>
           <div class="clients__user">
             <div class="clients__user-avatar">
-              <img alt="John Armstrong" src="./img/client-avatar-1.jpg">
+              <img alt="John Armstrong" src="images/client-avatar-1.jpg">
             </div>
             <div class="clients__text">
               <div class="clients__client-name">John Armstrong</div>
               <span class="clients__client-role">Customer</span>
             </div>
           </div>
-        </li>
-        <li class="clients__item bordered">
+        </div>
+        <div class="clients__item bordered">
           <p class="clients__item-description">
             Duis autem vel eum iriure dolor in&nbsp;hendrerit in&nbsp;vulputate
             velit esse molestie consequat, vel illum
@@ -262,15 +250,15 @@
           </p>
           <div class="clients__user">
             <div class="clients__user-avatar">
-              <img alt="Elizabeth Martin" src="./img/client-avatar-2.jpg">
+              <img alt="Elizabeth Martin" src="images/client-avatar-2.jpg">
             </div>
             <div class="clients__text">
               <div class="clients__client-name">Elizabeth Martin</div>
               <span class="clients__client-role">Customer</span>
             </div>
           </div>
-        </li>
-        <li class="clients__item bordered">
+        </div>
+        <div class="clients__item bordered">
           <p class="clients__item-description">
             Duis autem vel eum iriure dolor in&nbsp;hendrerit in&nbsp;vulputate
             velit esse molestie consequat, vel illum
@@ -280,23 +268,23 @@
           </p>
           <div class="clients__user">
             <div class="clients__user-avatar">
-              <img alt="Robin Soutby" src="./img/client-avatar-3.jpg">
+              <img alt="Robin Soutby" src="images/client-avatar-3.jpg">
             </div>
             <div class="clients__text">
               <div class="clients__client-name">Robin Soutby</div>
               <span class="clients__client-role">Customer</span>
             </div>
           </div>
-        </li>
-      </ul>
+        </div>
+      </div>
     </div>
   </section>
   <section class="contacts section" id="contacts">
     <div class="container">
       <h2 class="section__title contacts__title">Contacts</h2>
       <address class="contacts__address">
-        <ul class="list-reset contacts__list">
-          <li class="contacts__item contacts__item_location">
+        <div class="contacts__list">
+          <div class="contacts__item contacts__item_location">
             <strong class="contacts__item-caption">
               Visit&nbsp;Us
             </strong>
@@ -304,8 +292,8 @@
               Duis autem vel eum iriure dolor in&nbsp;hendrerit in&nbsp;vulputate
               velit.
             </p>
-          </li>
-          <li class="contacts__item contacts__item_call">
+          </div>
+          <div class="contacts__item contacts__item_call">
             <strong class="contacts__item-caption">
               Call&nbsp;Us
             </strong>
@@ -313,15 +301,15 @@
               654-32-10</a>
             <a class="contacts__item-link" href="tel:+71234567890">+7 (123)
               456-78-90</a>
-          </li>
-          <li class="contacts__item contacts__item_mail">
+          </div>
+          <div class="contacts__item contacts__item_mail">
             <strong class="contacts__item-caption">
               Email&nbsp;Us
             </strong>
             <a class="contacts__item-link" href="mailto:example@example.com">example@example.com</a>
             <a class="contacts__item-link" href="mailto:support@example.com">support@example.com</a>
-          </li>
-        </ul>
+          </div>
+        </div>
       </address>
     </div>
   </section>
@@ -329,7 +317,7 @@
     <div class="container">
       <h2 class="section__title join-us__title">Join us</h2>
       <p class="section__description join-us__description">
-        Take control of your paid subscriptions today!
+        Lionic guides you on making decisions for all aspects of your end-of-life plans.
       </p>
       <form action="https://jsonplaceholder.typicode.com/posts" class="join-as-form" method="POST">
         <div class="join-as-form__top-row">
@@ -354,10 +342,11 @@
         <div class="join-as-form__bottom-row">
           <div class="join-as-form__bottom-row-wrapper">
             <button class="button button-reset join-as-form__submit-button" type="submit">get started</button>
-            <label class="join-as-form__checkbox">
+            <label class="join-as-form__checkbox checkbox">
               <input required type="checkbox">
-              I agree with the
-              <a href="#">user agreement</a>
+              <span>
+                I agree with the <a href="#">user agreement</a>
+              </span>
             </label>
           </div>
         </div>
@@ -369,7 +358,7 @@
   <div class="container footer__container">
     <div class="footer__left">
       <a class="footer__logo" href="#">
-        <img alt="Footer logo" src="./img/logo.svg">
+        <img alt="Footer logo" src="images/logo.svg">
       </a>
       <small class="footer__copyright">Copyright &copy;2017. All Right
         Reserved</small>

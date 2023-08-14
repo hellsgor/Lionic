@@ -12,3 +12,9 @@
 .join-us__description {
   margin-bottom: 30px;
 }
+
+@media (max-width: 576px) {
+  .join-us__title {
+    text-align: left;
+  }
+}

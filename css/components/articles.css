@@ -2,18 +2,19 @@
 
 .articles__list {
   display: flex;
-  margin-bottom: 30px;
   flex-wrap: wrap;
+  gap: var(--offset);
+  --offset: 30px;
+  --offsets: 1;
 }
 
-.articles__item {
-  width: 570px;
+.articles__list > * {
+  width: calc((100% - (var(--offsets) * var(--offset))) / (var(--offsets) + 1));
 }
 
-.articles__item:not(:nth-child(2n)) {
-  margin-right: 30px;
-}
-
-.articles__item:not(:nth-last-child(-n-2)) {
-  margin-top: 30px;
+@media (max-width: 576px) {
+  .articles__list {
+    --offsets: 0;
+    --offset: 14px;
+  }
 }

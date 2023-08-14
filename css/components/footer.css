@@ -8,6 +8,11 @@ div.footer__container {
   padding-bottom: 44px;
   align-items: center;
   justify-content: space-between;
+  column-gap: 32px;
+}
+
+.footer__logo {
+  height: fit-content;
 }
 
 .footer__copyright {
@@ -20,20 +25,20 @@ div.footer__container {
   align-items: center;
 }
 
-.footer__logo {
-  margin-right: 25px;
+.footer__left {
+  gap: 25px;
 }
 
-.footer__nav {
-  margin-right: 56px;
+.footer__right {
+  column-gap: 56px;
 }
 
 .footer__nav-list {
   display: flex;
-}
-
-.footer__nav-list-item:not(:last-child) {
-  margin-right: 28px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  column-gap: 28px;
+  row-gap: 16px;
 }
 
 .footer__nav-list-item-link {
@@ -86,9 +91,11 @@ div.footer__container {
   outline: 1px solid var(--focus-color);
 }
 
-.footer__social-item-link_twitter:hover svg path,
-.footer__social-item-link_linkedin:hover svg path {
-  fill: var(--focus-color);
+@media (hover: hover) {
+  .footer__social-item-link_twitter:hover svg path,
+  .footer__social-item-link_linkedin:hover svg path {
+    fill: var(--focus-color);
+  }
 }
 
 .footer__social-item-link_mail:hover svg path {
@@ -106,4 +113,75 @@ div.footer__container {
 
 .footer__social-item-link_mail:active svg path {
   stroke: var(--hover-color);
+}
+
+@media (max-width: 992px) {
+  div.footer__container {
+    flex-direction: column;
+    flex-wrap: wrap;
+    row-gap: var(--offset);
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 0;
+  }
+
+  .footer__right {
+    flex-direction: column;
+    row-gap: var(--offset);
+  }
+}
+
+@media (max-width: 576px) {
+  .footer {
+    position: relative;
+  }
+
+  div.footer__container {
+    padding-top: 30px;
+    padding-bottom: 70px;
+    flex-direction: column-reverse;
+  }
+
+  .footer__left {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer__nav-list {
+    column-gap: 32px;
+    row-gap: 19px;
+  }
+
+  .footer__copyright {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-top: 1px solid var(--disabled-color);
+    text-align: center;
+
+  }
+
+  .footer__right {
+    width: 100%;
+    align-items: start;
+  }
+
+  .footer__social-item-link {
+    width: 19px;
+    height: 22px;
+  }
+
+  .footer__logo {
+    max-width: 80px;
+  }
+
+
 }
